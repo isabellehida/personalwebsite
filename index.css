@@ -120,5 +120,18 @@ allbuttons {
     position: fixed;
 }
 
+gallery {
+    display:flex;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.resume {
+    width: 100px;
+}
+
+.resume: hover {
+    width: 300px;
+}
 
 </style>
