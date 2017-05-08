@@ -11,6 +11,7 @@
     </head>
 
 <style>
+
 .mySlides {display:none;}
 </style>
 
@@ -19,7 +20,6 @@
     <link rel="stylesheet" href="index.css">
     <head>
 <style>
-
 
     .button {
     background-color: DAE1F1;
@@ -78,6 +78,11 @@ color: white;
 }
 </style>
 <style>
+
+ body {
+            background-color: rgba(179, 219, 214, 0.76);
+        }
+
 div.gallery {
     margin: 5px;
     border: 4px solid #DAE1F1;
@@ -106,7 +111,7 @@ div.desc {
 
 
 <div class="dropdown">
-<button> <a href="aboutme.html" class="button button1" onmouseover="myFunction()" class="dropbtn">News</a></button>
+<button> <a href="recentnews.html" class="button button1" onmouseover="myFunction()" class="dropbtn">News</a></button>
  <div>
   <div id="myDropdown" class="dropdown-content">
     <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
@@ -117,10 +122,115 @@ div.desc {
 </div>
     </div>
 
+      <a href="index.html">
+<img src="logo/newlogo.png" alt="Homepage" padding="1px 10px;" width="10%" height="10%" border="0">
+</a>
+
+
     <button> <a href="portfolio.html" class="button button3">Portfolio</a></button>
 
     <button> <a href="contactme.html"  class="button button4">Contact</a></button>
 
     <p> <br> </p>
 
-<img src="snapcode.png" alt="my snapcode" height:20% width="20%">
+
+
+ <div class="container">
+  <form action="mailto:s.isabelle.hidalgo@redclayschools.com" method="post" enctype="text/plain">
+
+    <label for="fname">Name</label>
+    <input type="text" id="name" name="firstname" placeholder="your name">
+
+    <label for="lname">Email</label>
+    <input type="text" id="email" name="lastname" placeholder="your email">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="your inquiry" style="height:50px" width="90px"></textarea>
+
+    <input type="submit" value="Submit">
+
+   <script>
+var myIndex = 0;
+var myIndex1 = 0;
+
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+    function myFunction1() {
+    document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+
+    function filterFunction1() {
+    var  input, filter, ul, li, a, i;
+    div = document.getElementById("myDropdown2");
+    a = div.getElementsByTagName("b");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+</script>
+<script>
+
+    /* this is to make my news have a dropdown bar */
+
+var myIndex = 0;
+var myIndex1 = 0;
+
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+    function myFunction1() {
+    document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+
+    function filterFunction1() {
+    var  input, filter, ul, li, a, i;
+    div = document.getElementById("myDropdown2");
+    a = div.getElementsByTagName("b");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+</script>

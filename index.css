@@ -30,7 +30,7 @@
     background-color: #DAE1F1;
 }
 
-
+/* this is to make my news have a dropdown bar with a search bar*/
 #myInput {
     background-image: url('searchicon.png');
     background-position: 14px 12px;
@@ -88,6 +88,9 @@
 
 .dropdown b:hover {background-color: #DAE1F1}
 
+/* this is end of dropdown */
+
+/* this is the start of slideshow */
 .show {display:block;}
 
 .slideshow {
@@ -115,10 +118,22 @@ gallery {
     flex-wrap: wrap-reverse;
 }
 
-allbuttons {
+/* this is end of slideshow */
 
-    position: fixed;
+/* all buttons */
+#allbuttons {
+
+    position: absolute;
+    align-items: center;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    text-decoration-style: none;
+    text-emphasis-style: none;
+
 }
+
+/* this is portfolio gallery */
 
 gallery {
     display:flex;
@@ -126,12 +141,28 @@ gallery {
     justify-content: space-around;
 }
 
-.resume {
-    width: 100px;
+/* this is for resume getting bigger */
+
+.resume { width: 30%;
+    height: 30%;
+    transition: all .2s ease-in-out;
+margin: 50px;
+align-content: center;}
+.resume:hover { transform: scale(1.4); }
+
+
+    background-color: #4D4D4D;
 }
 
-.resume: hover {
-    width: 300px;
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #999999;
+    padding: 20px;
+    margin: 50px;
+    color: white;
+    font-size: 25px;
+    font: inherit;
 }
 
 </style>
