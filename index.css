@@ -148,7 +148,11 @@ gallery {
     transition: all .2s ease-in-out;
 margin: 50px;
 align-content: center;}
-.resume:hover { transform: scale(1.4); }
+.resume:hover { transform: scale(1.4);
+position: relative;
+    align-content: center;
+    align-items: center;
+}
 
 
     background-color: #4D4D4D;
