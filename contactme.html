@@ -22,7 +22,7 @@
 <style>
 
     .button {
-    background-color: DAE1F1;
+    background-color: #DAE1F1;
     border: none;
     color: black;
     padding: 16px 32px;
@@ -106,6 +106,7 @@ div.desc {
 </style>
 </head>
 <body>
+    <center>
 
  <button> <a href="aboutme.html" class="button button1">About Me</a></button>
 
@@ -133,21 +134,50 @@ div.desc {
 
     <p> <br> </p>
 
+<!--how to do email-->
 
+<div class="form-style-3">
+<form>
+<fieldset><legend>About You</legend>
+<label for="field1"><span>Name<span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
+<label for="field2"><span>Email<span class="required">*</span></span><input type="email" class="input-field" name="field2" value="" /></label>
+<label for="field3"><span>Phone <span class="required">*</span></span><input type="text" class="input-field" name="field3" value="" /></label>
+<label for="field4"><span>Subject</span><select id="job" name="field4">
+<optgroup label="For Fun">
+  <option value="Memes">Memes</option>
+  <option value="jokes">Jokes</option>
+  <option value="Dogs">Dogs</option>
+  <option value="Pickup lines">Pickup lines</option>
+  <option value="Netflix">Netflix Recommendations</option>
+  <option value="chat">Just to chat</option>
+  <option>
+</optgroup>
+<optgroup label="Questions">
+  <option value="About my life">About my life</option>
+  <option value="crew">About Crew</option>
+  <option value="Cats">About My Cats</option>
+  <option value="universe">About Existence</option>
+  <option value="tutoring">About tutoring</option>
+  <option value="random"></option>
+</optgroup>
+<optgroup label="Misc.">
+  <option value="Other">Other</option>
+</optgroup>
+</select>
+    </label>
+    </fieldset>
+<fieldset><legend>Message</legend>
+<label for="field6"><span>Message <span class="required">*</span></span><textarea name="field6" class="textarea-field"></textarea></label>
+<label><span>&nbsp;</span><input type="submit" value="Submit" /></label>
+</fieldset>
+</form>
+</div>
 
- <div class="container">
-  <form action="mailto:s.isabelle.hidalgo@redclayschools.com" method="post" enctype="text/plain">
-
-    <label for="fname">Name</label>
-    <input type="text" id="name" name="firstname" placeholder="your name">
-
-    <label for="lname">Email</label>
-    <input type="text" id="email" name="lastname" placeholder="your email">
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="your inquiry" style="height:50px" width="90px"></textarea>
-
-    <input type="submit" value="Submit">
+   </center>
+    </body>
+    </head>
+    </head>
+</html>
 
    <script>
 var myIndex = 0;

@@ -1,7 +1,7 @@
 #wrapper {
-    margin-left:auto;
-    margin-right:auto;
-    width:960px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
 }
 
 .dropbtn {
@@ -13,7 +13,8 @@
     cursor: pointer;
 }
 
-.dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover,
+.dropbtn:focus {
     background-color: #DAE1F1;
 }
 
@@ -26,11 +27,14 @@
     cursor: pointer;
 }
 
-.dropbtn2:hover, .dropbtn2:focus {
+.dropbtn2:hover,
+.dropbtn2:focus {
     background-color: #DAE1F1;
 }
 
+
 /* this is to make my news have a dropdown bar with a search bar*/
+
 #myInput {
     background-image: url('searchicon.png');
     background-position: 14px 12px;
@@ -56,7 +60,7 @@
     background-color: #DAE1F1;
     min-width: 230px;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -66,7 +70,7 @@
     background-color: #DAE1F1;
     min-width: 230px;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -84,14 +88,23 @@
     display: block;
 }
 
-.dropdown a:hover {background-color: #DAE1F1}
+.dropdown a:hover {
+    background-color: #DAE1F1
+}
 
-.dropdown b:hover {background-color: #DAE1F1}
+.dropdown b:hover {
+    background-color: #DAE1F1
+}
+
 
 /* this is end of dropdown */
 
+
 /* this is the start of slideshow */
-.show {display:block;}
+
+.show {
+    display: block;
+}
 
 .slideshow {
     width: 800px;
@@ -108,57 +121,63 @@
     left: 0px;
     z-index: 0;
 }
+
 .cb-slideshow:after {
     content: '';
     background: transparent url(../images/pattern.png) repeat top left;
 }
 
 gallery {
-    display:flex;
+    display: flex;
     flex-wrap: wrap-reverse;
 }
 
+
 /* this is end of slideshow */
 
-/* all buttons */
-#allbuttons {
 
+/* all buttons */
+
+#allbuttons {
     position: absolute;
     align-items: center;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-around;
     text-decoration-style: none;
     text-emphasis-style: none;
-
 }
+
 
 /* this is portfolio gallery */
 
 gallery {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     justify-content: space-around;
 }
 
+
 /* this is for resume getting bigger */
 
-.resume { width: 30%;
+.resume {
+    width: 30%;
     height: 30%;
     transition: all .2s ease-in-out;
-margin: 50px;
-align-content: center;}
-.resume:hover { transform: scale(1.4);
-position: relative;
+    margin: 50px;
+    align-content: center;
+}
+
+.resume:hover {
+    transform: scale(1.4);
+    position: relative;
     align-content: center;
     align-items: center;
 }
 
+background-color: #4D4D4D;
 
-    background-color: #4D4D4D;
 }
-
-/* Add a background color and some padding around the form */
 .container {
     border-radius: 5px;
     background-color: #999999;
@@ -169,4 +188,97 @@ position: relative;
     font: inherit;
 }
 
+/* contact box // emails */
+.form-style-3 {
+    max-width: 450px;
+    font-family: sans-serif;
+}
+.form-style-3 label {
+    display: block;
+    margin-bottom: 10px;
+}
+.form-style-3 label > span {
+    float: left;
+    width: 100px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 13px;
+    text-shadow: 1px 1px 1px #fff;
+}
+.form-style-3 fieldset {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin: 0px 0px 10px 0px;
+    border: 1px solid #000000;
+    padding: 20px;
+    background: #DAE1F1;
+    box-shadow: inset 0px 0px 15px #DAE1F1;
+    -moz-box-shadow: inset 0px 0px 15px #DAE1F1;
+    -webkit-box-shadow: inset 0px 0px 15px #DAE1F1;
+}
+.form-style-3 fieldset legend {
+    color: #000000;
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    background: #f2e9e9;
+    padding: 0px 8px 3px 8px;
+    box-shadow: -0px -1px 2px #DAE1F1;
+    -moz-box-shadow: -0px -1px 2px #DAE1F1;
+    -webkit-box-shadow: -0px -1px 2px #DAE1F1;
+    font-weight: normal;
+    font-size: 12px;
+    font-weight: bold;
+}
+.form-style-3 textarea {
+    width: 250px;
+    height: 100px;
+}
+.form-style-3 input[type=text],
+.form-style-3 input[type=date],
+.form-style-3 input[type=datetime],
+.form-style-3 input[type=number],
+.form-style-3 input[type=search],
+.form-style-3 input[type=time],
+.form-style-3 input[type=url],
+.form-style-3 input[type=email],
+.form-style-3 select,
+.form-style-3 textarea {
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 1px solid #000000;
+    outline: none;
+    color: #000000;
+    padding: 5px 8px 5px 8px;
+    box-shadow: inset 1px 1px 4px #DAE1F1;
+    -moz-box-shadow: inset 1px 1px 4px #DAE1F1;
+    -webkit-box-shadow: inset 1px 1px 4px #DAE1F1;
+    background: #dedede;
+    width: 50%;
+}
+.form-style-3 input[type=submit],
+.form-style-3 input[type=button] {
+    background: #c0cce8;
+    border: 1px solid #000000;
+    padding: 5px 15px 5px 15px;
+    color: rgba(0, 0, 0, 0.76);
+    box-shadow: inset -1px -1px 3px #c0cce8;
+    -moz-box-shadow: inset -1px -1px 3px #c0cce8;
+    -webkit-box-shadow: inset -1px -1px 3px #c0cce8;
+    border-radius: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    font-weight: bold;
+}
+.required {
+    color: red;
+    font-weight: normal;
+}
 </style>
