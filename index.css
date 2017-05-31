@@ -107,9 +107,12 @@
 }
 
 .slideshow {
+
     width: 800px;
     height: 599px;
     overflow: hidden;
+    padding-top: 20px;
+
 }
 
 .cb-slideshow,
@@ -151,12 +154,39 @@ gallery {
 
 /* this is portfolio gallery */
 
-gallery {
+#wholegallery {
     display: flex;
-    justify-content: space-between;
-    justify-content: space-around;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    border: 1px solid black;
 }
 
+div.gallery {
+    border: 1px solid #ccc;
+    flex-basis: auto;
+    flex-direction: column;
+    max-height: 400px;
+    max-height: auto;
+    padding: 0px;
+    display: flex;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+
+div.gallery img {
+    max-width: 300px;
+    height: auto;
+}
+
+
+div.desc {
+    padding: 15px;
+    text-align: center;
 
 /* this is for resume getting bigger */
 
@@ -280,5 +310,18 @@ background-color: #4D4D4D;
 .required {
     color: red;
     font-weight: normal;
+
+}
+
+/* this is to make my news websites*/
+
+.newsweb {
+
+    padding-bottom: 30px;
+    flex-direction: row;
+    align-content: space-between;
+    padding-top: 10px;
+    grid-row-gap: 10px;
+
 }
 </style>

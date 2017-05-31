@@ -12,8 +12,20 @@
 
 <style>
 
+        <style type="text/css">
+
+#share-buttons img {
+width: 35px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}
+
+
 .mySlides {display:none;}
 </style>
+
 
 <head>
     <title>My Page</title>
@@ -117,7 +129,6 @@ div.desc {
   <div id="myDropdown" class="dropdown-content">
     <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
     <a href="recentnews.html">Most Recent</a>
-    <a href="archives.html">Archives</a>
     <a href="blog.html">Blog</a>
   </div>
 </div>
@@ -166,6 +177,7 @@ div.desc {
 </select>
     </label>
     </fieldset>
+
 <fieldset><legend>Message</legend>
 <label for="field6"><span>Message <span class="required">*</span></span><textarea name="field6" class="textarea-field"></textarea></label>
 <label><span>&nbsp;</span><input type="submit" value="Submit" /></label>
@@ -173,11 +185,29 @@ div.desc {
 </form>
 </div>
 
+  <!-- social media widgets -->
+<div id="share-buttons">
+
+
+
+
+    <!-- Tumblr-->
+    <a href="http://www.tumblr.com/mangosandmomjeans" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
+    </a>
+
+    <!-- Twitter -->
+    <a href="https://twitter.com/izzy_hidalgo" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+    </a>
+
+</div>
+
    </center>
     </body>
     </head>
-    </head>
 </html>
+
 
    <script>
 var myIndex = 0;
